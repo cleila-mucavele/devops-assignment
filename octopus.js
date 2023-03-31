@@ -36,6 +36,7 @@ process.on("SIGINT", () => {
   console.log("SIGINT received, closing HTTP server.");
   server.close();
 });
+
 process.on("SIGQUIT", () => {
   console.log("SIGQUIT received, closing HTTP server.");
   server.close();
